@@ -340,11 +340,11 @@ bool socket_handle_input(fd_set *rdfs, char *output_char)
                 clientfds[i] = -1;
                 continue;
             }
-            /* match the behavior of a terminal in raw mode */
-            if (*output_char == '\n')
-            {
-                *output_char = '\r';
-            }
+            // /* match the behavior of a terminal in raw mode */
+            // if (*output_char == '\n')
+            // {
+            //     *output_char = '\r';
+            // }
             return true;
         }
     }
